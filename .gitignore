@@ -11,6 +11,7 @@ __pycache__/
 *.h5
 *.mat
 *.csv
+*.h5.mat
 
 # Distribution / packaging
 .Python
