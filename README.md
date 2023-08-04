@@ -106,21 +106,22 @@ The best model we have will be the one with 50% of accuracy as no superior alter
 # 5. Recommendation:
 
 - Check and clean master data:
-As a standard practice, prior to utilizing data for input into the model, it is crucial to engage the relevant departments and obtain their confirmation on the integrity of their respective working data. This verification process serves to ensure both model accuracy and the delivery of precise outputs to customers.
+    - As a standard practice, prior to utilizing data for input into the model, it is crucial to engage the relevant departments and obtain their confirmation on the integrity of their respective working data. This verification process serves to ensure both model accuracy and the delivery of precise outputs to customers.
 
 - Marketing the new image search feature as a competitive advantage again competitors
     - Make media noise to let every user know that our company has this new feature in order to drive traffic to our website, then ultimately increase sales.
     - Additionally, as we encourage more customers to use the new feature, the more data we will collect for our further analysis.
 
 - Utilize image data for buying references.
-- Buying team can utilize image search analysis for buying references to leverage sales, especially from trendy opportunities.
+    - Buying team can utilize image search analysis for buying references to leverage sales, especially from trendy opportunities.
 
 # 6. Deployment:
 
 Here comes what our new feature will look like:
 After the customer uploads their target image, the website will classify which type of product types he or she is looking for and return top 5 similar products.
 
-  ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/a324ce32-6f03-4cac-9943-2bce0c45c3c1)
+  ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/113264a4-7a99-4b09-ae09-387791341df5)
+
 
 # 7. Limitation:
 - Due to the limited timeline and computational capacity, my models will run maximum 50 epochs. However, training time was significantly extended, with the longest training model taking more than 3 days.
@@ -128,8 +129,8 @@ After the customer uploads their target image, the website will classify which t
 - Siamese model's accuracy achieved only 50%
 
   # 8. Next steps:
-  - Improve Siamese model's accuracy
-  - Apply image classification and image similarity for all product types 
+- Improve Siamese model's accuracy
+- Apply image classification and image similarity for all product types 
 
 
 
