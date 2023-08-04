@@ -130,7 +130,7 @@ siamese_model_loaded = load_model('/Users/thaophan/Documents/Flatiron/Phase5_Pro
 
 
 # Streamlit app code
-st.title('Hi! Welcome to NICEON website!')
+st.title('Hi! Welcome to NITA FASHION website!')
 st.header('Tell us what you are looking for')
 
 
