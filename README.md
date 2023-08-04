@@ -36,7 +36,7 @@ Considering the vast potential of the global visual search market, I believe tha
 Given our company's current capacity and available resources, I propose taking a phased approach, starting with phase 1, which will primarily focus on building an image search feature with 2 functions: image classification and image similarity. This will allow us to build a strong foundation and gradually expand into other areas of visual search in the future.
 
 ### Stakeholders:
-The proposal will be introduced to the Chief Executive Officer and all Department Heads to gather input, feedback, and approval for its implementation.
+The proposal will be introduced to the Chief Executive Officer and all Department Heads to get feedback and approval for its implementation.
 
 # 2. Data understanding:
 ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/9a6822de-bdab-4cb6-aa72-421f51733b83)
