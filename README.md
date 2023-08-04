@@ -3,7 +3,7 @@
 # 1. Overview:
 
 ### 1.1.About the company: 
-NITA Fashion is one of the biggest e-commerce companies distributing over 400 local and international brands. The products are divided into four main categories: apparel, footwear, accessories, and personal care. Customer experience is the company's core value. We consistently strive to identify challenges and devise effective solutions, placing utmost importance on ensuring our customers' satisfaction.
+NITA Fashion is one of the biggest e-commerce companies distributing over 400 local and international brands. The products are divided into four main categories: apparel, footwear, accessories, and personal care. Customer experience is the company's core value. We consistently strive to identify problems and devise effective solutions, placing utmost importance on ensuring our customers' satisfaction.
 
 ### 1.2.Business problem:
 As an E-commerce data scientist, I am recently working on a project proposal to enhance the customer experience during product searches. This initiative is based on insights gathered from a survey conducted in 2022, which involved feedback from 2000 customers regarding the challenges they encounter while searching for products using keywords. The survey findings revealed several valuable points:
