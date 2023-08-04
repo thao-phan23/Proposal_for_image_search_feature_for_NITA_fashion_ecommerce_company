@@ -2,19 +2,19 @@
 ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/b3ec5d8a-3fa3-4307-8602-9ade36eed20d)
 # 1. Overview:
 
-### About the company: 
+### 1.1.About the company: 
 NITA Fashion is one of the biggest e-commerce companies distributing over 400 local and international brands. The products are divided into four main categories: apparel, footwear, accessories, and personal care. Customer experience is the company's core value. We consistently strive to identify challenges and devise effective solutions, placing utmost importance on ensuring our customers' satisfaction.
 
-### Business problem:
+### 1.2.Business problem:
 As an E-commerce data scientist, I am recently working on a project proposal to enhance the customer experience during product searches. This initiative is based on insights gathered from a survey conducted in 2022, which involved feedback from 2000 customers regarding the challenges they encounter while searching for products using keywords. The survey findings revealed several valuable points:
 - 35% of the customers reported difficulties in locating their desired products amidst the vast array of offerings on the website.
 - 42% expressed concerns about spending excessive time on the website without being able to find their target items effectively.
 - 22% of the customers expressed the demand for an image search feature
 
-### Key business question: 
+### 1.3.Key business question: 
 How to improve customer experience during product searches?
 
-### Visual search:
+### 1.4.Visual search:
 
 I would like to mention visual search (image search and video search) and how potential it is, especially in the fashion e-commerce market.
 - Visual search is a new search type with rising demand, in which:
@@ -32,10 +32,10 @@ I would like to mention visual search (image search and video search) and how po
 
 Considering the vast potential of the global visual search market, I believe that adopting visual search is a critical and timely move for our company. Being an early adopter will provide us with competitive advantages and allow us to leverage all of its benefits.
 
-### Solution:
+### 1.5.Solution:
 Given our company's current capacity and available resources, I propose taking a phased approach, starting with phase 1, which will primarily focus on building an image search feature with 2 functions: image classification and image similarity. This will allow us to build a strong foundation and gradually expand into other areas of visual search in the future.
 
-### Stakeholders:
+### 1.6.Stakeholders:
 The proposal will be introduced to the Chief Executive Officer and all Department Heads to get feedback and approval for its implementation.
 
 # 2. Data understanding:
@@ -74,8 +74,65 @@ We will build up a Siamese model with utilizing contrastive loss in order to pre
 
   ![siamese](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/d54bcb03-a35c-4fdc-81bd-dc65a04fa63f)
 
-Test accuracy first achieved 50% and despite various improvement steps, the model's test accuracy remain at only 50%. Due to the time constraint and computational limitations, we will consider this model is our best model at the moment.
+Test accuracy first achieved 50% and despite various improvement steps, the model's test accuracy remain at only 50%. Due to the time constraint and computational limitations, we will consider this model as our best model at the moment.
 
 # 4. Model evaluation:
+
+The model's performance will be assessed based on accuracy, which involves calculating the ratio of correct predictions to the total number of predictions.
+Besides that, f1-score will be another metric to use to analyze the performance of individual classes in the image classification model.
+
+### 4.1.Image classification model:
+The image classification model's performance will be evaluated across the same 50 training epochs.
+
+By comparing the performance of all models, the best CNN model turns out to be the best one regarding the accuracy, and computational time within 50 epochs.
+
+  ![Best model](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/244e9289-ba44-4c26-967d-fed9a8a1690d)
+
+When examining the performance in individual classes, 8 out of 10 them exhibit impressive F1-scores ranging from 96% to 100%. However, casual shoes and sports shoes were exceptions, showing slightly lower scores of 82% and 85%, respectively.
+
+  ![f1-score by class](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/c0adfe19-a2f1-4bd2-a663-a4a1d56b03ae)
+
+The explanation for it is visual ambiguity when the machine cannot distinguish the differences between casual shoes and sports shoes, which limits its ability to learn, hence, resulting in lower f1-scores.
+Visual ambiguity can be attributed to both subjective and objective causes. Subjective causes might arise from incorrect master data while subjective causes may be rooted in the design nature, where products share a similar appearance but serve different functions. 
+
+### 4.2.Image similarity model.
+The image similarity model will experiment with epochs ranging from 5 to 20 to explore various scenarios.
+
+The best model we have will be the one with 50% of accuracy as no superior alternatives have been identified thus far.
+
+![siamese](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/d54bcb03-a35c-4fdc-81bd-dc65a04fa63f)
+
+
+# 5. Recommendation:
+
+- Check and clean master data:
+As a standard practice, prior to utilizing data for input into the model, it is crucial to engage the relevant departments and obtain their confirmation on the integrity of their respective working data. This verification process serves to ensure both model accuracy and the delivery of precise outputs to customers.
+
+- Marketing the new image search feature as a competitive advantage again competitors
+    - Make media noise to let every user know that our company has this new feature in order to drive traffic to our website, then ultimately increase sales.
+    - Additionally, as we encourage more customers to use the new feature, the more data we will collect for our further analysis.
+
+- Utilize image data for buying references.
+- Buying team can utilize image search analysis for buying references to leverage sales, especially from trendy opportunities.
+
+# 6. Deployment:
+
+Here comes what our new feature will look like:
+After the customer uploads their target image, the website will classify which type of product types he or she is looking for and return top 5 similar products.
+
+  ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/a324ce32-6f03-4cac-9943-2bce0c45c3c1)
+
+# 7. Limitation:
+- Due to the limited timeline and computational capacity, my models will run maximum 50 epochs. However, training time was significantly extended, with the longest training model taking more than 3 days.
+- Data have classes imbalance
+- Siamese model's accuracy achieved only 50%
+
+  # 8. Next steps:
+  - Improve Siamese model's accuracy
+  - Apply image classification and image similarity for all product types 
+
+
+
+
 
 
