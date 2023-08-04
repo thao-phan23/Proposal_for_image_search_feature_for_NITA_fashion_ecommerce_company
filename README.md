@@ -95,6 +95,8 @@ When examining the performance in individual classes, 8 out of 10 them exhibit i
 The explanation for it is visual ambiguity when the machine cannot distinguish the differences between casual shoes and sports shoes, which limits its ability to learn, hence, resulting in lower f1-scores.
 Visual ambiguity can be attributed to both subjective and objective causes. Subjective causes might arise from incorrect master data while subjective causes may be rooted in the design nature, where products share a similar appearance but serve different functions. 
 
+Therefore, to mitigate this issue arising from objective factors, it is crucial to ensure the integrity of the input data.
+
 ### 4.2.Image similarity model.
 The image similarity model will experiment with epochs ranging from 5 to 20 to explore various scenarios.
 
