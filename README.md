@@ -70,7 +70,7 @@ We then apply transfer learning networks to build up the models to see which is 
 
 ### 3.2. Image similarity modeling:
 
-We will build up a Siamese model with utilizing contrastive loss in order to predict the Euclidean distances of image pairs. The shorter distances indicate stronger similarity.
+We will build up a Siamese model utilizing contrastive loss in order to predict the Euclidean distances of image pairs. The shorter distances indicate stronger similarity.
 
   ![siamese](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/d54bcb03-a35c-4fdc-81bd-dc65a04fa63f)
 
@@ -79,7 +79,7 @@ Test accuracy first achieved 50% and despite various improvement steps, the mode
 # 4. Model evaluation:
 
 The model's performance will be assessed based on accuracy, which involves calculating the ratio of correct predictions to the total number of predictions.
-Besides that, f1-score will be another metric to use to analyze the performance of individual classes in the image classification model.
+Besides that, the f1-score will be another metric to use to analyze the performance of individual classes in the image classification model.
 
 ### 4.1.Image classification model:
 The image classification model's performance will be evaluated across the same 50 training epochs.
@@ -100,7 +100,7 @@ Therefore, to mitigate this issue arising from objective factors, it is crucial 
 ### 4.2.Image similarity model.
 The image similarity model will experiment with epochs ranging from 5 to 20 to explore various scenarios.
 
-The best model we have will be the one with 50% of accuracy as no superior alternatives have been identified thus far.
+The best model we have will be the one with 50% accuracy as no superior alternatives have been identified thus far.
 
 ![siamese](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/d54bcb03-a35c-4fdc-81bd-dc65a04fa63f)
 
@@ -110,28 +110,32 @@ The best model we have will be the one with 50% of accuracy as no superior alter
 - Check and clean master data:
     - As a standard practice, prior to utilizing data for input into the model, it is crucial to engage the relevant departments and obtain their confirmation on the integrity of their respective working data. This verification process serves to ensure both model accuracy and the delivery of precise outputs to customers.
 
-- Marketing the new image search feature as a competitive advantage again competitors
+- Marketing the new image search feature as a competitive advantage against competitors
     - Make media noise to let every user know that our company has this new feature in order to drive traffic to our website, then ultimately increase sales.
     - Additionally, as we encourage more customers to use the new feature, the more data we will collect for our further analysis.
 
 - Utilize image data for buying references.
-    - Buying team can utilize image search analysis for buying references to leverage sales, especially from trendy opportunities.
+    The buying team can utilize image search analysis for buying references to leverage sales, especially from trendy opportunities.
 
 # 6. Deployment:
 
 Here comes what our new feature will look like:
-After the customer uploads their target image, the website will classify which type of product types he or she is looking for and return top 5 similar products.
+After the customer uploads their target image, the website will classify which type of product types he or she is looking for and return the top 5 similar products.
+
+This is the video link for the deployment:  https://www.loom.com/share/08c684695d564f699cb4f975c815f8b2?sid=af60a0d2-abb3-4b35-a267-ea4355323183
+
+Also, below is the snapshot of the deployment.
 
   ![image](https://github.com/thao2023/Image_search_feature_proposal_for_fashion_website/assets/131706716/113264a4-7a99-4b09-ae09-387791341df5)
 
 
 # 7. Limitation:
-- Due to the limited timeline and computational capacity, my models will run maximum 50 epochs. However, training time was significantly extended, with the longest training model taking more than 3 days.
-- Data have classes imbalance
+- Due to the limited timeline and computational capacity, my models will run a maximum of 50 epochs. However, training time was significantly extended, with the longest training model taking more than 3 days.
+- Data have class imbalance
 - Siamese model's accuracy achieved only 50%
 
   # 8. Next steps:
-- Improve Siamese model's accuracy
+- Improve the Siamese model's accuracy
 - Apply image classification and image similarity for all product types 
 
 
