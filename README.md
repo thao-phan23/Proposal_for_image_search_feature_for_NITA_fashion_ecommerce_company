@@ -122,7 +122,8 @@ The best model we have will be the one with 50% accuracy as no superior alternat
 Here comes what our new feature will look like:
 After the customer uploads their target image, the website will classify which type of product types he or she is looking for and return the top 5 similar products.
 
-This is the video link for the deployment:  https://www.loom.com/share/08c684695d564f699cb4f975c815f8b2?sid=af60a0d2-abb3-4b35-a267-ea4355323183
+This is the video link for the deployment:
+https://www.loom.com/share/08c684695d564f699cb4f975c815f8b2?sid=727db1e3-32b1-41cb-a2c4-bcf0a82a62cb
 
 Also, below is the snapshot of the deployment.
 
@@ -131,7 +132,7 @@ Also, below is the snapshot of the deployment.
 
 # 7. Limitation:
 - Due to the limited timeline and computational capacity, my models will run a maximum of 50 epochs. However, training time was significantly extended, with the longest training model taking more than 3 days.
-- Data have class imbalance
+- Data have classes imbalance
 - Siamese model's accuracy achieved only 50%
 
   # 8. Next steps:
